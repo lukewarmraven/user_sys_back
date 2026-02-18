@@ -18,3 +18,8 @@ mongoose.connect(MONGO_URI)
 )
 .catch(err => console.error(err))
 
+//routes
+app.use("/api/users", require("./routes/userRoutes"))
+app.listen(5000,()=>console.log("Listening on port 5000..."))
+
+app.get("/hello", ()=> console.log("hello"))
