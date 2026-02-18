@@ -1,0 +1,9 @@
+# Ignore node_modules everywhere
+node_modules/
+
+# Ignore all .env files
+*.env
+
+# Optional: ignore build folders
+frontend/.next/
+backend/dist/
